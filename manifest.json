@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Grass Color Changer",
+    "version": "1.0",
+    "description": "GitHubの草を色付かせます。",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
