@@ -1,23 +1,26 @@
 const colors = {
-  winter: ["#00d5ff", "#00aaff", "#0080ff", "#002bff"],
   spring: ["#ff99ee", "#ff80ea", "#ff66e6", "#ff00ff"],
-  autumn: ["#e39988", "#e3745b", "#e34f2d", "#e32a00"],
+  summer: ["#05f792", "#04c97a", "#03a062", "#02774a"],
+  autumn: ["#ff7f50", "#ff6347", "#ff4500", "#ff0000"],
+  winter: ["#00d5ff", "#00aaff", "#0080ff", "#002bff"],
 };
-let theme = "winter"; //初期は冬
+let theme = "spring"; //初期は春
 
 // 色付ける処理
 function changeGrassColor() {
   const days = document.querySelectorAll(".ContributionCalendar-day");
   const selectedColor = (() => {
     switch (theme) {
-      case "winter":
-        return colors.winter;
       case "spring":
         return colors.spring;
+      case "summer":
+        return colors.summer;
       case "autumn":
         return colors.autumn;
-      default:
+      case "winter":
         return colors.winter;
+      default:
+        return colors.spring;
     }
   })();
 
