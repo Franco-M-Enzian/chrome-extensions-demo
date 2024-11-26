@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // もみじをクリック時の処理
   document.getElementById("momiji").addEventListener("click", () => {
     console.log("onclick: もみじ");
-    sendMessageToContentScript("maple");
+    // sendMessageToContentScript("maple");
   });
 
   // イチョウをクリック時の処理
   document.getElementById("icho").addEventListener("click", () => {
     console.log("onclick: イチョウ");
-    sendMessageToContentScript("icho");
+    // sendMessageToContentScript("icho");
   });
 
   function sendMessageToContentScript(theme) {

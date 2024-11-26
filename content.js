@@ -1,31 +1,7 @@
-const colors = {
-  momiji: ["#e39988", "#e3745b", "#e34f2d", "#e32a00"],
-  icho: ["#f7dd94", "#f7d063", "#f7c331", "#f8b500"],
-};
-let theme = "momiji"; //初期はもみじ
+const color = ["#e39988", "#e3745b", "#e34f2d", "#e32a00"];
 
 // 色付ける処理
-function changeGrassColor() {
-  const days = document.querySelectorAll(".ContributionCalendar-day");
-  const selectedColor = (() => {
-    switch (theme) {
-      case "momiji":
-        return colors.momiji;
-      case "icho":
-        return colors.icho;
-      default:
-        return colors.momiji;
-    }
-  })();
-
-  days.forEach((day) => {
-    const level = day.getAttribute("data-level");
-    if (level > 0 && level <= 4) {
-      day.style.fill = selectedColor[level - 1];
-      day.style.backgroundColor = selectedColor[level - 1];
-    }
-  });
-}
+function changeGrassColor() {}
 
 // 動的に読み込まれたコンテンツを処理
 const observer = new MutationObserver((mutations) => {
