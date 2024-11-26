@@ -1,0 +1,28 @@
+body {
+  width: 200px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+button {
+  width: 80%;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#momiji {
+  background-color: rgb(255, 99, 71); /* もみじ色 */
+  color: white;
+}
+
+button#icho {
+  background-color: rgb(255, 223, 0); /* イチョウ色 */
+  color: white;
+}
