@@ -1,14 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // もみじをクリック時の処理
+  // 冬をクリック時の処理
   document.getElementById("winter").addEventListener("click", () => {
     console.log("onclick: 冬");
     sendMessageToContentScript("maple");
   });
 
-  // イチョウをクリック時の処理
+  // 春をクリック時の処理
   document.getElementById("spring").addEventListener("click", () => {
     console.log("onclick: 春");
     sendMessageToContentScript("spring");
+  });
+
+  // 秋をクリック時の処理
+  document.getElementById("autumn").addEventListener("click", () => {
+    console.log("onclick: 秋");
+    sendMessageToContentScript("autumn");
   });
 
   function sendMessageToContentScript(theme) {

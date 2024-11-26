@@ -18,11 +18,16 @@ button {
 }
 
 button#winter {
-  background-color: rgb(71, 99, 255); /* もみじ色 */
+  background-color: rgb(71, 99, 255); /* 冬仕様 */
   color: white;
 }
 
 button#spring {
-  background-color: rgb(255, 56, 205); /* イチョウ色 */
+  background-color: rgb(255, 56, 205); /* 春仕様 */
+  color: white;
+}
+
+button#autumn {
+  background-color: rgb(252, 159, 37); /* 秋仕様 */
   color: white;
 }
