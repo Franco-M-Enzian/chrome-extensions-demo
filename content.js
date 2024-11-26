@@ -1,20 +1,20 @@
 const colors = {
-  momiji: ["#e39988", "#e3745b", "#e34f2d", "#e32a00"],
-  icho: ["#f7dd94", "#f7d063", "#f7c331", "#f8b500"],
+  winter: ["#00d5ff", "#00aaff", "#0080ff", "#002bff"],
+  spring: ["#ff99ee", "#ff80ea", "#ff66e6", "#ff00ff"],
 };
-let theme = "momiji"; //初期はもみじ
+let theme = "winter"; //初期はもみじ
 
 // 色付ける処理
 function changeGrassColor() {
   const days = document.querySelectorAll(".ContributionCalendar-day");
   const selectedColor = (() => {
     switch (theme) {
-      case "momiji":
-        return colors.momiji;
-      case "icho":
-        return colors.icho;
+      case "winter":
+        return colors.winter;
+      case "spring":
+        return colors.spring;
       default:
-        return colors.momiji;
+        return colors.winter;
     }
   })();
 

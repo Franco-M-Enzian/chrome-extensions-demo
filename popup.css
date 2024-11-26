@@ -17,12 +17,12 @@ button {
   cursor: pointer;
 }
 
-button#momiji {
-  background-color: rgb(255, 99, 71); /* もみじ色 */
+button#winter {
+  background-color: rgb(71, 99, 255); /* もみじ色 */
   color: white;
 }
 
-button#icho {
-  background-color: rgb(255, 223, 0); /* イチョウ色 */
+button#spring {
+  background-color: rgb(255, 56, 205); /* イチョウ色 */
   color: white;
 }
