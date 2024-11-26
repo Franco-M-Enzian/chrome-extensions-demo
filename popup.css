@@ -17,17 +17,26 @@ button {
   cursor: pointer;
 }
 
-button#winter {
-  background-color: rgb(71, 99, 255); /* 冬仕様 */
+button#spring {
+  background-color: rgb(255, 56, 205); /* 春仕様 */
+  font-weight: bold;
   color: white;
 }
 
-button#spring {
-  background-color: rgb(255, 56, 205); /* 春仕様 */
+button#summer {
+  background-color: rgb(71, 255, 184); /* 夏仕様 */
+  font-weight: bold;
   color: white;
 }
 
 button#autumn {
   background-color: rgb(252, 159, 37); /* 秋仕様 */
+  font-weight: bold;
+  color: white;
+}
+
+button#winter {
+  background-color: rgb(71, 99, 255); /* 冬仕様 */
+  font-weight: bold;
   color: white;
 }
