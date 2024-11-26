@@ -1,8 +1,9 @@
 const colors = {
   winter: ["#00d5ff", "#00aaff", "#0080ff", "#002bff"],
   spring: ["#ff99ee", "#ff80ea", "#ff66e6", "#ff00ff"],
+  autumn: ["#e39988", "#e3745b", "#e34f2d", "#e32a00"],
 };
-let theme = "winter"; //初期はもみじ
+let theme = "winter"; //初期は冬
 
 // 色付ける処理
 function changeGrassColor() {
@@ -13,6 +14,8 @@ function changeGrassColor() {
         return colors.winter;
       case "spring":
         return colors.spring;
+      case "autumn":
+        return colors.autumn;
       default:
         return colors.winter;
     }
